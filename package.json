@@ -1,0 +1,14 @@
+{
+  "name": "isabelle",
+  "version": "1.0.0",
+  "description": "Yet another telegram bot",
+  "main": "app.js",
+  "repository": "github.com/reaganiwadha/isabelle",
+  "author": "reaganiwadha",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "telegraf": "^3.36.0"
+  }
+}
