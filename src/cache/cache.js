@@ -7,7 +7,7 @@ const QuickLRU = require('quick-lru');
 
 class LRU extends QuickLRU{
     verify(key, value){
-        if(this.cache.has(key) && this.cache.get(key) == value){ return true; }
+        if(this.cache.has(key) && this.cache.get(key) === value){ return true; }
         return false;
     }
 }
