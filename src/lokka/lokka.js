@@ -9,6 +9,6 @@ const Transport = require('lokka-transport-http').Transport;
  */
 const lokkaClient = new Lokka({
     transport : new Transport(gqlConfig.url)
-})
+});
 
 module.exports = lokkaClient;

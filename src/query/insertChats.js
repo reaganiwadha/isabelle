@@ -12,4 +12,4 @@ function insertChats (chatId, chatTitle){
     }
 }
 
-module.exports = insertChats
+module.exports = insertChats;

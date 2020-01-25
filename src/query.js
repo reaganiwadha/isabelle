@@ -1,3 +1,3 @@
-const insertChats = require('./query/insertChats')
+const insertChats = require('./query/insertChats');
 
-module.exports = { insertChats }
+module.exports = { insertChats };

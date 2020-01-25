@@ -8,6 +8,6 @@ const {insertChats} = require('../../query');
 const MessageHandler = (ctx) => {
     const message = ctx.message;
     insertChats(message.chat.id, message.chat.title);
-}
+};
 
 module.exports = MessageHandler;

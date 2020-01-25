@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-const Telegraf = require("telegraf");
-const { botConfig } = require("../config");
+const Telegraf = require('telegraf');
+const { botConfig } = require('../config');
 
 const bot = new Telegraf(botConfig.token);
 
