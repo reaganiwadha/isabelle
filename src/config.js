@@ -6,4 +6,8 @@ const expressConfig = {
     port : process.env.EXPRESS_PORT || 3000
 }
 
-module.exports = { expressConfig, botConfig };
+const gqlConfig = {
+    url : process.env.GQL_URL
+}
+
+module.exports = { expressConfig, botConfig, gqlConfig };

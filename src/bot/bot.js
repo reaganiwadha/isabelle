@@ -12,3 +12,5 @@ bot.hears('no u', (ctx) => ctx.reply('u'))
 bot.command('tobeimplemented', (ctx) => ctx.reply("so the next thing to be implemented by me is programmable responds, but the dev behind me is going to figure out how the fuck im gonna be connected to a db and what db"))
 
 bot.launch()
+
+module.exports = bot;
