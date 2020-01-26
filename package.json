@@ -13,5 +13,8 @@
     "lokka-transport-http": "^1.6.1",
     "quick-lru": "^4.0.1",
     "telegraf": "^3.36.0"
+  },
+  "scripts":{
+    "start": "node app.js"
   }
 }
