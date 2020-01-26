@@ -1,4 +1,5 @@
 const {insertChats} = require('../../query');
+const debug = require('debug')('MessageHandler');
 
 /**
  * @param {function} MessageHandler
@@ -8,6 +9,7 @@ const {insertChats} = require('../../query');
 const MessageHandler = (ctx) => {
     const message = ctx.message;
     insertChats(message.chat.id, message.chat.title);
+    debug('A new message from',message.from.username);
 };
 
 module.exports = MessageHandler;

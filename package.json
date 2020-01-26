@@ -7,6 +7,7 @@
   "author": "reaganiwadha",
   "license": "MIT",
   "dependencies": {
+    "debug": "^4.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "lokka": "^1.7.0",
@@ -14,7 +15,7 @@
     "quick-lru": "^4.0.1",
     "telegraf": "^3.36.0"
   },
-  "scripts":{
+  "scripts": {
     "start": "node app.js"
   }
 }

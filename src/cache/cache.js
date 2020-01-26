@@ -1,4 +1,5 @@
 const QuickLRU = require('quick-lru');
+const debug = require('debug')('LRUCache')
 
 /**
  * @param {class} LRU 
@@ -7,7 +8,11 @@ const QuickLRU = require('quick-lru');
 
 class LRU extends QuickLRU{
     verify(key, value){
-        if(this.cache.has(key) && this.cache.get(key) === value){ return true; }
+        if(this.cache.has(key) && this.cache.get(key) === value){
+            debug('Cache for',key,'with the value of',value,'is valid!') 
+            return true; 
+        }
+        debug('Cache for',key,'with the value of',value,'is invalid!') 
         return false;
     }
 }
