@@ -7,8 +7,7 @@ const expressConfig = {
 };
 
 const gqlConfig = {
-    url : process.env.GQL_URL,
-    adminSecret : process.env.HASURA_ADMIN_SECRET
+    
 };
 
 module.exports = { expressConfig, botConfig, gqlConfig };

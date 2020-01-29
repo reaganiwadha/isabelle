@@ -10,8 +10,9 @@ const debug = require('debug')('app');
 
 const {expressConfig} = require('./src/config');
 
+const sequelize = require('./src/sequelize/sequelize');
+
 const bot = require('./src/bot/bot');
-const lokka = require('./src/lokka/lokka');
 
 //app.get('/', (req,res) => res.sendStatus(200));
 //app.listen(expressConfig.port, () => debug('Bot started'));
