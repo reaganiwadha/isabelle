@@ -1,6 +1,7 @@
 const {reportConfig} = require('../../config');
 const parseDuration = require('parse-duration');
 const prettyDuration = require('pretty-ms');
+const telegraf = require('telegraf');
 
 const usage = "remindme - USAGE:\ns"
 
@@ -12,7 +13,7 @@ const RemindMeHandler = async (ctx) => {
     );
 
     setTimeout(()=>{
-      ctx.reply("Times Up!")  
+      ctx.reply("Times Up!", telegraf.Extra.inReplyTo(ctx.update.message.message_id));
     },duration)
 
 }
