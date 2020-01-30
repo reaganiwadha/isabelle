@@ -6,8 +6,8 @@ const expressConfig = {
     port : process.env.EXPRESS_PORT || 3000
 };
 
-const gqlConfig = {
-    
+const reportConfig = {
+    ownerId : process.env.OWNER_ID
 };
 
-module.exports = { expressConfig, botConfig, gqlConfig };
+module.exports = { expressConfig, botConfig, reportConfig };

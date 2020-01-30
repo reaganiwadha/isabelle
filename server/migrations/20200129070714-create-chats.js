@@ -3,12 +3,12 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('chats', {
       id: {
-        allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
         type: Sequelize.INTEGER
       },
       chatId: {
+        allowNull: false,
+        primaryKey: true,
         type: Sequelize.STRING
       },
       chatTitle: {
