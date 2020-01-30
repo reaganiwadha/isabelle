@@ -2,7 +2,6 @@ const {insertChats} = require('../../query');
 const debug = require('debug')('MessageHandler');
 
 const bot = require('../bot');
-const {reportConfig} = require('../../config');
 
 /**
  * @param {function} MessageHandler
@@ -12,11 +11,8 @@ const {reportConfig} = require('../../config');
 const MessageHandler = async (ctx) => {
     const message = ctx.message;
 
-    //ctx.telegram.sendMessage(reportConfig.ownerId, "!!!");
+    insertChats(message.chat.id, message.chat.title);
 
-    insertChats(message.chat.id, message.chat.title).then((res)=>{
-        ctx.reply(res);
-    })
     debug('A new message from',message.from.username);
 };
 
