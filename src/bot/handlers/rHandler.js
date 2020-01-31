@@ -12,11 +12,11 @@ const rHandler = (ctx) => {
             limit: count,
             random: true
         })
-        .then(posts => {
+        .then((posts) => {
             posts.forEach(post => {
-                ctx.replyWithPhoto(post.fileUrl)
+                ctx.replyWithPhoto(post.fileUrl);
             });
         });
-}
+};
 
 module.exports = rHandler;
