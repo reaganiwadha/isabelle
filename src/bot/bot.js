@@ -12,7 +12,8 @@ const {
     LinuxHandler,
     RemindMeHandler,
     rHandler,
-    DisableHandler
+    DisableHandler,
+    BotStatusHandler
 } = require('./handlers');
 const {LinuxRegex} = require('./regexes');
 const commandParts = require('telegraf-command-parts');
@@ -25,6 +26,7 @@ bot.command('ping', PingHandler);
 bot.command('remindme', RemindMeHandler);
 bot.command('r', rHandler);
 bot.command('disable', (ctx) => DisableHandler(bot, ctx));
+bot.command('botstatus', BotStatusHandler);
 
 bot.on('message', MessageHandler);
 
